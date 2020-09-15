@@ -1,0 +1,24 @@
+    .header {
+    padding: 30px;
+    margin: -30px;
+    text-align: left;
+    background: #1abc9c;
+    position: relative;
+    color: white;
+    font-size: 30px;
+  }
+
+.header2{
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  font-size:30px;
+}
+
+.thanks{
+  margin: 10px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
