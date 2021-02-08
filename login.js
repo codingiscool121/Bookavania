@@ -50,7 +50,7 @@ auth.onAuthStateChanged(function(user){
 if(user){
 //is signed in 
 var email = user.email;
-alert(" Thanks for signing in to Bookavania, "+ email+ "! In this web app, you will be able to browse books, book reviews, book summaries and more. Click OK to finalize your login.");
+// alert(" Thanks for signing in to Bookavania, "+ email+ "! In this web app, you will be able to browse books, book reviews, book summaries and more. Click OK to finalize your login.");
 window.location = "dashboard.html"
 }else{
    alert("Please sign in to Bookavania, or sign up.")
