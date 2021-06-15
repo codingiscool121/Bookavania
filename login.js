@@ -37,6 +37,16 @@ function signIn(){
   //Take user to different or home page
 
 }
+function forgotPassword(){
+  var email = document.getElementById("email");
+  if(!email){
+    alert("Please provide a email Id.")
+}else{
+    console.log(email)
+    firebase.auth().sendPasswordResetEmail(email)
+    alert("A password reset email has been sent to your account.")
+}
+}
 
 
 // function signOut(){
@@ -50,6 +60,8 @@ auth.onAuthStateChanged(function(user){
 if(user){
 //is signed in 
 var email = user.email;
+console.log(email, user)
+alert("Welcome, " + user.email + "!")
 // alert(" Thanks for signing in to Bookavania, "+ email+ "! In this web app, you will be able to browse books, book reviews, book summaries and more. Click OK to finalize your login.");
 window.location = "dashboard.html"
 }else{
